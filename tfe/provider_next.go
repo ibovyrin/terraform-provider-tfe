@@ -25,9 +25,9 @@ type FrameworkProviderConfig struct {
 	SSLSkipVerify types.Bool   `tfsdk:"ssl_skip_verify"`
 }
 
-// FrameworkProviderServer is a helper function for initializing the portion of
+// NewFrameworkProvider is a helper function for initializing the portion of
 // the tfe provider implemented via the terraform-plugin-framework.
-func FrameworkProviderServer() provider.Provider {
+func NewFrameworkProvider() provider.Provider {
 	return &frameworkProvider{}
 }
 
