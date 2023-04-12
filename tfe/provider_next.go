@@ -16,6 +16,9 @@ import (
 // behavior of the tfe provider. Today, it is a small but growing subset.
 type frameworkProvider struct{}
 
+// Compile-time interface check
+var _ provider.Provider = &frameworkProvider{}
+
 // FrameworkProviderConfig is a helper type for extracting the provider
 // configuration from the provider block.
 type FrameworkProviderConfig struct {
