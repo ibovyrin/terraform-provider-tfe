@@ -63,6 +63,7 @@ require github.com/stretchr/testify v1.8.2
 
 require (
 	github.com/hashicorp/hc-install v0.5.0 // indirect
+	github.com/hashicorp/terraform-plugin-framework v1.2.0 // indirect
 	github.com/hashicorp/terraform-plugin-log v0.8.0 // indirect
 	github.com/hashicorp/terraform-registry-address v0.2.0 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
