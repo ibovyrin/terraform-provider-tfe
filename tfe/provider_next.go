@@ -49,8 +49,8 @@ func (p *frameworkProvider) Schema(_ context.Context, _ provider.SchemaRequest, 
 			},
 			"token": schema.StringAttribute{
 				Optional:    true,
-				Sensitive:   true,
 				Description: descriptions["token"],
+				// TODO: should be sensitive, but that's a breaking change.
 			},
 			"organization": schema.StringAttribute{
 				Description: descriptions["organization"],
@@ -61,7 +61,6 @@ func (p *frameworkProvider) Schema(_ context.Context, _ provider.SchemaRequest, 
 				Optional:    true,
 			},
 		},
-		Description: "The TFC/TFE provider configuration block.",
 	}
 }
 
