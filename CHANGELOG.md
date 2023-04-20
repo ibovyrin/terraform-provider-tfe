@@ -5,6 +5,7 @@ BREAKING CHANGES:
 FEATURES:
 
 ENHANCEMENTS:
+* Remove beta flag from `r/tfe_project_variable_set` test. Feature now generally available.
 
 BUG FIXES:
 
